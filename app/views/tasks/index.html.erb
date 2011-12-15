@@ -1,0 +1,10 @@
+<div id="tasks"></div>
+
+<script type="text/javascript">
+  
+  $(function() {
+    // Todos is the app name
+    window.router = new Todos.Routers.TasksRouter({tasks: #{@tasks.to_json.html_safe}});
+    Backbone.history.start();
+  });
+</script>

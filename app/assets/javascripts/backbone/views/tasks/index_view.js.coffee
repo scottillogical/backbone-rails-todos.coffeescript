@@ -1,8 +1,11 @@
-Todos.Views.Tasks ||= {}
+Todos.Views.Todos ||= {}
 
-class Todos.Views.Tasks.IndexView extends Backbone.View
-  template: JST["backbone/templates/tasks/index"]
+class Todos.Views.Todos.IndexView extends Backbone.View
+  template: JST["backbone/templates/todos/index"]
 
-  render: ->
-    $(@el).html(@template())
-    return this
+  initialize: () ->
+
+
+  render: =>
+    $(@el).html(@template(todos: @options.todos.toJSON()))
+

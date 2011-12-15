@@ -1,12 +1,21 @@
-<div id="tasks"></div>
+<div class="title">
+  <h1>Todos</h1>
+  <h3>in CoffeeScript</h3>
+</div>
+
+<div id="new-task">
+
+</div>
+
+<div id="tasks">
+
+</div>
 
 <script type="text/javascript">
   
   $(function() {
     // Todos is the app name
-    //window.router = new Todos.Routers.TodosRouter({todos: #{@todos.to_json.html_safe}});
-    //Backbone.history.start();
-    window.router = new Todos.Routers.TodosRouter({posts: <%= @todos.to_json.html_safe -%>});
+    window.router = new Todos.Routers.TodosRouter({todos: <%= @todos.to_json.html_safe -%>});
     Backbone.history.start();
   });
 </script>

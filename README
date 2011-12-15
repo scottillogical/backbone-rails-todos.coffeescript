@@ -1,2 +1,2 @@
-This uses Backbone.js, Rails 3.1, rails-backbone, coffeescript, and mongoid.
+This is a port of the sample app Backbone Todos that is meant to display the use of Backbone.js, Rails 3.1, rails-backbone, coffeescript, and mongoid.
 

@@ -2,7 +2,7 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.1.3'
 gem 'sqlite3'
-gem "backbone-rails", "~> 0.5.3.1"
+gem "rails-backbone", "~> 0.5.5"
 
 # Gems used only for assets and not required
 # in production environments by default.

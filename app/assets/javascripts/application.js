@@ -10,5 +10,5 @@
 //= require backbone
 //= require backbone_rails_sync
 //= require backbone_datalink
-//= require backbone/backbone_rails_todos
+//= require backbone/todos
 //= require_tree .

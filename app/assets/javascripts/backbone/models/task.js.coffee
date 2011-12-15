@@ -5,6 +5,6 @@ class Todos.Models.Task extends Backbone.Model
     content: null
     done: null
 
-class Todos.Collections.TasksCollection extends Backbone.Collection
+class Todos.Collections.TodosCollection extends Backbone.Collection
   model: Todos.Models.Task
   url: '/tasks'

@@ -1,10 +1,10 @@
-Todos.Views.Posts ||= {}
+Todos.Views.Todos ||= {}
 
-class Todos.Views.Posts.NewView extends Backbone.View
-  template: JST["backbone/templates/posts/new"]
+class Todos.Views.Todos.NewView extends Backbone.View
+  template: JST["backbone/templates/todos/new"]
 
   events:
-    "submit #new-post": "save"
+    "submit #new-todo": "save"
 
   constructor: (options) ->
     super(options)
@@ -21,11 +21,11 @@ class Todos.Views.Posts.NewView extends Backbone.View
     @model.unset("errors")
 
     @collection.create(@model.toJSON(),
-      success: (post) =>
-        @model = post
+      success: (todo) =>
+        @model = todo
         window.location.hash = "/#{@model.id}"
 
-      error: (post, jqXHR) =>
+      error: (todo, jqXHR) =>
         @model.set({errors: $.parseJSON(jqXHR.responseText)})
     )
 
